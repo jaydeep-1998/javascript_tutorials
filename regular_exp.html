@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            first javascript
+        </title>
+        <script type="text/javascript">
+         function validate(){ 
+            username = document.getElementById("uname").value; 
+            // this how you can create regular expression in javascript
+            var regx = /E00/;
+            regx1 = new RegExp("E00");
+            if(regx.test(username)){
+                alert("valid username");
+            }
+            else{
+                alert("invalid username");
+            }
+         } 
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return validate()" action="default.html"> 
+            <input id="uname" placeholder="Username" type="text"/>
+            <br><br>
+            <button type="submit">submit it</button>
+        </form>
+    </body>
+</html>

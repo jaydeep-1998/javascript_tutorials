@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            first javascript
+        </title>
+        <script type="text/javascript">
+            function fn1(){
+                document.getElementById("img1").src = "screenshots/operators.JPG";
+            }
+            function fn2(){
+                document.getElementById("img1").src = "screenshots/dom.JPG";
+            }
+        </script>
+    </head>
+    <body>
+        <img id="img1" onmouseover="fn1()" onmouseout="fn2()" 
+        src="screenshots/dom.JPG" alt="image"/>
+    </body>
+</html>

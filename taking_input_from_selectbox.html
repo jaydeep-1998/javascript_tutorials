@@ -7,14 +7,18 @@
         function fn1(){
             var select = document.getElementById("selectbox");
             alert(select.selectedIndex)
-          
+            // select.options[select.selectedIndex].text
+            //there is no value for innerhtml of select but we have to take the "text" instead of "innerhtml"
+            alert(select.options[select.selectedIndex].text)
+            alert(select.options[select.selectedIndex].value)
+        }
         </script>
     </head>
     <body>
         <select id="selectbox">
-            <option>simple snippet</option>
-            <option>telusko learnings</option>
-            <option>self learning</option>
+            <option value="ss">simple snippet</option>
+            <option value="tl">telusko learnings</option>
+            <option value="sl">self learning</option>
         </select>
         <br>
         <button onclick="fn1()">click me</button>

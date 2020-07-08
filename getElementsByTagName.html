@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            first javascript
+        </title>
+        <script type="text/javascript">
+
+            function changeStyling(){
+                var para = document.getElementsByTagName("p");
+                para[0].style.fontSize = 25
+                para[1].style.color = "red";
+                para[2].style.fontWeight = "bold";
+                para[3].style.fontStyle = "italic";
+                para[4].innerHTML = "jaydeep bhalala";
+                
+                // you can not write below code 
+                for(var i=0;i<3;i++){
+                    document.write("<h2>"+para[i].innerHTML+"</h2>");
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <p>this is paragraph 1</p>
+        <p>this is paragraph 2</p>
+        <p>this is paragraph 3</p>
+        <p>this is paragraph 4</p>
+        <p>this is paragraph 5</p>
+        <br>
+        <button onclick="changeStyling()">changeStyle</button>
+    </body>
+</html>
